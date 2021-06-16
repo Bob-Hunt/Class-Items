@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    display: flex;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: purple;
+    font-weight: bold;
+}
+
+p{
+    color: green;
+
+}
