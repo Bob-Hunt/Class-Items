@@ -1,0 +1,39 @@
+body {
+  background-color: #a5e1ad;
+  margin: 0;
+}
+
+#header {
+  display: flex;
+  height: 450px;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+    display: flex;
+    height: 100%;
+    margin: 15px;
+}
+
+.container > div:nth-child(1){
+    flex: 1;
+}
+
+.container > div:nth-child(2){
+    flex: 3;
+}
+
+#hand {
+    max-width: 100px;
+}
+
+#instructions-list{
+   list-style-type: "👉";
+   /* list-style-type: ""; */
+
+   color:rgb(139, 32, 53);
+   padding-inline-start: 5ch;
+   
+   
+}
