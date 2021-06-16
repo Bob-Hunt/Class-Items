@@ -66,5 +66,15 @@
     left: 2px;
     top: 2px;
     background-color: white;
-    /* z-index: 2; */
+}
+
+.tongue{
+    width: 10px;
+    height: 2px;
+    border: solid 1px red;
+    background-color: red;
+    position: relative;
+    left: 10px;
+    top: 4px;
+    border-radius: 2px 2px 0px 0px;
 }
