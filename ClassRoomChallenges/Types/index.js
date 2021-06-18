@@ -15,9 +15,11 @@ let num = myObject.myNum;
 // console.log(typeof myObject.myBool);
 // console.log(typeof myObject.myStr);
 
-let item = myObject.myNum;
+let item = myObject.myBool;
 
-if ((typeof item) === 'string' || 'number' || 'boolean'){
+if ((typeof item) == 'string' || 'number' || 'boolean' || 'object'){
     console.log(typeof item);
+} else {
+    console.log("What are you?");
 }
 
