@@ -177,3 +177,56 @@ convertOzToMil(1);
 convertOzToMil(10);
 
 // End of Challenge //
+
+
+/*
+Challenge:
+    
+    Make a tip calculator using a function
+    Have it return the value 
+    Capture that returned value in a variable
+    Print that variable
+*/
+
+let tipCalc = (bill, tipPercent = 20) => {
+    let amt = (bill * tipPercent)/100;
+    let total = (bill + (amt/100));
+    let response = console.log(`A ${tipPercent.toFixed(2)}% tip added to you bill of $${bill.toFixed(2)} will be $${amt.toFixed(2)}. Your total = $${total.toFixed(2)}.`);
+    return response;
+}
+
+tipCalc(11.50);
+tipCalc(11.50, 10);
+
+/*
+Challenge:
+    Write a function that takes two parameters:
+    One parameter is for a first name,
+    The other parameter is for the last name;
+    Have them come together in a variable inside the function.
+    console.log 'Hello, my name is Maxwell Smart.'
+    Call your function 
+
+    NOTE: Future white board exercise.
+*/
+
+function fullName(firstName, lastName, middleName = ""){
+    let concatName = (`${firstName} ${middleName} ${lastName}`) 
+    return console.log(`Hello, my name is ${concatName}.`)
+}
+
+fullName('Robert', 'Hunt', 'Michael');
+fullName('Robert', 'Hunt');
+fullName('Bob', 'Hunt', 'M');
+
+//
+
+let fullName = (firstName, lastName) => {
+    let concatName = `Hello, my name is ${firstName} ${lastName}.`
+    return console.log(concatName)
+};
+
+// fullName(Robert, Hunt, Michael);
+fullName('Robert', 'Hunt');
+fullName('Bob', 'Hunt', 'M');
+
