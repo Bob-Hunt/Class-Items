@@ -47,7 +47,7 @@ for (let i = 0; i <= 100; i++){
 function fizzBuzzLoop(num){
     for (let i = 0; i <= num; i++){
         switch(true){
-            case (i %3 === 0 && i %5 === 0):
+            case (i %15 === 0):
                 console.log('FizzBuzz');
                 break;
             case (i %3 === 0):
